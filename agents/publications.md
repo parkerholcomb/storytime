@@ -41,3 +41,12 @@ Meet a tall, scruffy Dad and a Mom with a glow, and baby girl Lennon with blue e
 
 - [Book (PDF)](https://storage.googleapis.com/storytime-share/the-scruffy-tall-dad-and-the-lennon-blue-sky/book.pdf)
 - [Narration (MP3)](https://storage.googleapis.com/storytime-share/the-scruffy-tall-dad-and-the-lennon-blue-sky/narration.mp3)
+
+## The Grins of Little Lennon
+
+*Published 2026-03-09 20:34*
+
+Join a tall scruffy Dad, a beautiful Mom with a sun-bright smile, and little Lennon with her big blue eyes in a whimsical world of giggles and joy!
+
+- [Book (PDF)](https://storage.googleapis.com/storytime-share/the-grins-of-little-lennon/book.pdf)
+- [Narration (MP3)](https://storage.googleapis.com/storytime-share/the-grins-of-little-lennon/narration.mp3)

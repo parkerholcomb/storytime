@@ -8,11 +8,11 @@ from agents import author, illustrator, reader, publisher
 MODELS = {
     "flash": {
         "BASE_MODEL": "gemini-3-flash-preview",
-        "IMAGE_MODEL": "gemini-3-flash-image-preview",
+        "IMAGE_MODEL": "gemini-3.1-flash-image-preview",
         "TTS_MODEL": "gemini-2.5-flash-preview-tts",
     },
     "pro": {
-        "BASE_MODEL": "gemini-3-pro-preview",
+        "BASE_MODEL": "gemini-3.1-pro-preview",
         "IMAGE_MODEL": "gemini-3-pro-image-preview",
         "TTS_MODEL": "gemini-2.5-pro-preview-tts",
     },
@@ -33,7 +33,7 @@ def main():
 
     print("Step 1/4 — Writing the story...")
     story: author.Story = author.run()
-    print(f"  ✓ \"{story.title}\" ({len(story.pages)} pages)")
+    print(f'  ✓ "{story.title}" ({len(story.pages)} pages)')
 
     print("Step 2/4 — Illustrating & narrating (parallel)...")
     with ThreadPoolExecutor(max_workers=2) as pool:
@@ -46,9 +46,7 @@ def main():
     print(f"  ✓ {len(illustrations.pages)} illustrations + audio ready")
 
     print("Step 3/4 — Building PDF & uploading...")
-    publication: publisher.Publication = publisher.run(
-        story, illustrations, narration
-    )
+    publication: publisher.Publication = publisher.run(story, illustrations, narration)
 
     elapsed = time.time() - t0
     print(f"\nDone in {elapsed:.0f}s")
