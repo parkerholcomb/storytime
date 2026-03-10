@@ -59,6 +59,7 @@ def generate_image(
     # print(image_response)
     img_data = image_response.candidates[0].content.parts[0].inline_data.data
     img = Image.open(io.BytesIO(img_data))
+    img.load()
     return img
 
 
@@ -132,10 +133,21 @@ def generate_back_cover_image(story: Story, characters: Image) -> Image:
 
 
 def run(story: Story) -> Illustrations:
+    from concurrent.futures import ThreadPoolExecutor
+
     characters = generate_characters_image(story)
-    front = generate_cover_image(story, characters)
-    back = generate_back_cover_image(story, characters)
-    illustrations = [generate_illustration(p, characters) for p in story.pages]
+
+    with ThreadPoolExecutor() as pool:
+        front_future = pool.submit(generate_cover_image, story, characters)
+        back_future = pool.submit(generate_back_cover_image, story, characters)
+        page_futures = [
+            pool.submit(generate_illustration, p, characters) for p in story.pages
+        ]
+
+        front = front_future.result()
+        back = back_future.result()
+        illustrations = [f.result() for f in page_futures]
+
     return Illustrations(
         characters=characters, front=front, back=back, pages=illustrations
     )

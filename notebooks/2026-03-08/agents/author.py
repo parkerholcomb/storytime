@@ -1,15 +1,14 @@
 import os
-import io
-from PIL import Image
-from pydantic import BaseModel, Field
-from google import genai
-from google.genai import types
-from dotenv import load_dotenv
 from pathlib import Path
 
+from dotenv import load_dotenv
+from google import genai
+from google.genai import types
+from pydantic import BaseModel, Field
 
 load_dotenv()
 GEMINI_KEY = os.getenv("API_KEY")
+MODEL = os.getenv("BASE_MODEL")
 client = genai.Client(api_key=GEMINI_KEY)
 
 _DIR = Path(__file__).parent
@@ -31,13 +30,13 @@ class Story(BaseModel):
     )
 
 
-def generate_story(prompt: list, model: str = "gemini-3-flash-preview") -> Story:
+def generate_story(prompt: list) -> Story:
     with open(_DIR / "characters.md", "r") as file:
         characters = file.read()
 
     prompt = f"write a story about {characters}"
     story_response = client.models.generate_content(
-        model=model,
+        model=MODEL,
         contents=prompt,
         config=types.GenerateContentConfig(
             response_mime_type="application/json",

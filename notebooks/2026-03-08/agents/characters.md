@@ -4,11 +4,13 @@ Include these characters in the story
 
 # Dad
 
-Dad is a tall kind man with a scratchy scruffy face
+Dad is a tall kind man with a scruffy face
+Late 30s
 
 # Mom
 
-Mom is a beautiful brunette
+Mom is a beautiful brunette with such a stunning smile
+Late 30s
 
 # Lennon
 
