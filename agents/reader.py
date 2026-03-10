@@ -1,5 +1,5 @@
 import os
-
+from pathlib import Path
 from .author import Story
 from dotenv import load_dotenv
 from google import genai
@@ -11,6 +11,17 @@ load_dotenv()
 GEMINI_KEY = os.getenv("API_KEY")
 client = genai.Client(api_key=GEMINI_KEY)
 TTS_MODEL = os.getenv("TTS_MODEL")
+
+
+_DIR = Path(__file__).parent
+
+with open(_DIR / "soul.md", "r") as file:
+    soul = file.read()
+
+SYSTEM_PROMPT = f"""
+You are the reader of a childrens story
+{soul}
+"""
 
 
 class Narration(BaseModel):
@@ -32,6 +43,7 @@ def generate_audio(story: Story) -> AudioSegment:
         contents=tts_prompt,
         config=types.GenerateContentConfig(
             response_modalities=["AUDIO"],
+            system_instruction=SYSTEM_PROMPT,
             speech_config=types.SpeechConfig(
                 voice_config=types.VoiceConfig(
                     prebuilt_voice_config=types.PrebuiltVoiceConfig(voice_name="Aoede")
