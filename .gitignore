@@ -12,3 +12,4 @@ build/
 .ipynb_checkpoints/
 
 output/
+_notebooks/
