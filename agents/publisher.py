@@ -61,11 +61,13 @@ def _build_pdf(illustrations: Illustrations) -> bytes:
 
 
 _PUBLICATIONS_MD = os.path.join(os.path.dirname(__file__), "publications.md")
+_ROOT_README = os.path.join(os.path.dirname(__file__), "..", "README.md")
 
 
 def _save_publication(pub: Publication, summary: str):
     timestamp = datetime.now().strftime("%Y-%m-%d %H:%M")
-    entry = (
+
+    catalog_entry = (
         f"\n## {pub.title}\n\n"
         f"*Published {timestamp}*\n\n"
         f"{summary}\n\n"
@@ -73,7 +75,17 @@ def _save_publication(pub: Publication, summary: str):
         f"- [Narration (MP3)]({pub.audio_url})\n"
     )
     with open(_PUBLICATIONS_MD, "a") as f:
-        f.write(entry)
+        f.write(catalog_entry)
+
+    readme_entry = (
+        f"\n### {pub.title}\n\n"
+        f"*Published {timestamp}*\n\n"
+        f"{summary}\n\n"
+        f"- [Book (PDF)]({pub.book_url})\n"
+        f"- [Narration (MP3)]({pub.audio_url})\n"
+    )
+    with open(_ROOT_README, "a") as f:
+        f.write(readme_entry)
 
 
 def run(
