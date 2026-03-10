@@ -66,3 +66,11 @@ Meet a tall scruffy Dad, a Mom with a beautiful smile, and sweet baby Lennon in 
 Join a tall, scruffy Dad, a beautiful Mom with a dazzling smile, and sweet baby Lennon with her bright blue eyes for a day of giggles and snuggles.
 
 - [Book (PDF)](https://storage.googleapis.com/storytime-share/the-scruffy-the-sunny-and-blue-eyed-bunny/book.pdf)
+
+## The Happy Little Lennon
+
+*Published 2026-03-09 21:06*
+
+A bouncy, rhyming tale of little Lennon and her very big family, including two very special aunties who travel far to see her bright blue eyes!
+
+- [Book (PDF)](https://storage.googleapis.com/storytime-share/the-happy-little-lennon/book.pdf)
