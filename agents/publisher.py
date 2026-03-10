@@ -2,6 +2,7 @@ import io
 import os
 import re
 from datetime import datetime
+from typing import Optional
 
 from PIL import Image
 from google.cloud import storage
@@ -17,7 +18,7 @@ GCP_PUBLIC_BASE = f"https://storage.googleapis.com/{GCP_BUCKET_NAME}"
 class Publication(BaseModel):
     title: str = Field(description="The title of the story")
     book_url: str = Field(description="The public URL of the published book PDF")
-    audio_url: str = Field(description="The public URL of the narration audio")
+    audio_url: Optional[str] = Field(default=None, description="The public URL of the narration audio")
 
 
 def _slugify(text: str) -> str:
@@ -67,12 +68,14 @@ _ROOT_README = os.path.join(os.path.dirname(__file__), "..", "README.md")
 def _save_publication(pub: Publication, summary: str):
     timestamp = datetime.now().strftime("%Y-%m-%d %H:%M")
 
+    audio_line = f"- [Narration (MP3)]({pub.audio_url})\n" if pub.audio_url else ""
+
     catalog_entry = (
         f"\n## {pub.title}\n\n"
         f"*Published {timestamp}*\n\n"
         f"{summary}\n\n"
         f"- [Book (PDF)]({pub.book_url})\n"
-        f"- [Narration (MP3)]({pub.audio_url})\n"
+        f"{audio_line}"
     )
     with open(_PUBLICATIONS_MD, "a") as f:
         f.write(catalog_entry)
@@ -82,14 +85,14 @@ def _save_publication(pub: Publication, summary: str):
         f"*Published {timestamp}*\n\n"
         f"{summary}\n\n"
         f"- [Book (PDF)]({pub.book_url})\n"
-        f"- [Narration (MP3)]({pub.audio_url})\n"
+        f"{audio_line}"
     )
     with open(_ROOT_README, "a") as f:
         f.write(readme_entry)
 
 
 def run(
-    story: Story, illustrations: Illustrations, narration: Narration
+    story: Story, illustrations: Illustrations, narration: Optional[Narration] = None
 ) -> Publication:
     client = storage.Client()
     bucket = client.bucket(GCP_BUCKET_NAME)
@@ -123,13 +126,16 @@ def run(
     pdf_path = f"{prefix}/book.pdf"
     _upload_bytes(bucket, pdf_path, pdf_data, "application/pdf")
 
-    audio_path = f"{prefix}/narration.mp3"
-    _upload_bytes(bucket, audio_path, _audio_bytes(narration.audio), "audio/mpeg")
+    audio_url = None
+    if narration:
+        audio_path = f"{prefix}/narration.mp3"
+        _upload_bytes(bucket, audio_path, _audio_bytes(narration.audio), "audio/mpeg")
+        audio_url = f"{GCP_PUBLIC_BASE}/{audio_path}"
 
     pub = Publication(
         title=story.title,
         book_url=f"{GCP_PUBLIC_BASE}/{pdf_path}",
-        audio_url=f"{GCP_PUBLIC_BASE}/{audio_path}",
+        audio_url=audio_url,
     )
     _save_publication(pub, story.summary)
     return pub

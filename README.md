@@ -6,21 +6,21 @@ AI-generated children's storybooks — written, illustrated, narrated, and publi
 
 ### The Scruff and the Snuggle of Little Miss Lennon
 
-*Published 2026-03-09 19:46*
+_Published 2026-03-09 19:46_
 
 - [Book (PDF)](https://storage.googleapis.com/storytime-share/the-scruff-and-the-snuggle-of-little-miss-lennon/book.pdf)
 - [Narration (MP3)](https://storage.googleapis.com/storytime-share/the-scruff-and-the-snuggle-of-little-miss-lennon/narration.mp3)
 
 ### The Scruff and the Blue-Eyed Glee
 
-*Published 2026-03-09 19:55*
+_Published 2026-03-09 19:55_
 
 - [Book (PDF)](https://storage.googleapis.com/storytime-share/the-scruff-and-the-blue-eyed-glee/book.pdf)
 - [Narration (MP3)](https://storage.googleapis.com/storytime-share/the-scruff-and-the-blue-eyed-glee/narration.mp3)
 
 ### The Scruff, the Smile, and the Bright Blue Eye
 
-*Published 2026-03-09 20:04*
+_Published 2026-03-09 20:04_
 
 In a house full of giggles and whiskers so wild, live a tall scruffy Dad and a very blue-eyed child! Follow Mom and young Lennon through a morning of glee in this whimsical tale for the whole family.
 
@@ -29,7 +29,7 @@ In a house full of giggles and whiskers so wild, live a tall scruffy Dad and a v
 
 ### The Zany Day of Baby Lennon
 
-*Published 2026-03-09 20:15*
+_Published 2026-03-09 20:15_
 
 Join Dad with his scruff, Mom with her smile, and little Lennon with eyes like the sky, on a whimsical Seussical adventure in their cozy home.
 
@@ -38,7 +38,7 @@ Join Dad with his scruff, Mom with her smile, and little Lennon with eyes like t
 
 ### The Scruffy-Tall Dad and the Lennon-Blue Sky
 
-*Published 2026-03-09 20:24*
+_Published 2026-03-09 20:24_
 
 Meet a tall, scruffy Dad and a Mom with a glow, and baby girl Lennon with blue eyes a-show! A rhyming adventure of a family so bright, tucked into their home on a whimsical night.
 
@@ -47,9 +47,27 @@ Meet a tall, scruffy Dad and a Mom with a glow, and baby girl Lennon with blue e
 
 ### The Grins of Little Lennon
 
-*Published 2026-03-09 20:34*
+_Published 2026-03-09 20:34_
 
 Join a tall scruffy Dad, a beautiful Mom with a sun-bright smile, and little Lennon with her big blue eyes in a whimsical world of giggles and joy!
 
 - [Book (PDF)](https://storage.googleapis.com/storytime-share/the-grins-of-little-lennon/book.pdf)
 - [Narration (MP3)](https://storage.googleapis.com/storytime-share/the-grins-of-little-lennon/narration.mp3)
+
+[ Soul Updated ]
+
+### The Scruffy, The Smiley, and Lennon Too
+
+*Published 2026-03-09 20:51*
+
+Meet a tall scruffy Dad, a Mom with a beautiful smile, and sweet baby Lennon in this bouncy, rhyming tale of a very happy family.
+
+- [Book (PDF)](https://storage.googleapis.com/storytime-share/the-scruffy-the-smiley-and-lennon-too/book.pdf)
+
+### The Scruffy, the Sunny, and Blue-Eyed Bunny
+
+*Published 2026-03-09 20:55*
+
+Join a tall, scruffy Dad, a beautiful Mom with a dazzling smile, and sweet baby Lennon with her bright blue eyes for a day of giggles and snuggles.
+
+- [Book (PDF)](https://storage.googleapis.com/storytime-share/the-scruffy-the-sunny-and-blue-eyed-bunny/book.pdf)
