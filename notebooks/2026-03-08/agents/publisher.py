@@ -63,11 +63,12 @@ def _build_pdf(illustrations: Illustrations) -> bytes:
 _PUBLICATIONS_MD = os.path.join(os.path.dirname(__file__), "publications.md")
 
 
-def _save_publication(pub: Publication):
+def _save_publication(pub: Publication, summary: str):
     timestamp = datetime.now().strftime("%Y-%m-%d %H:%M")
     entry = (
         f"\n## {pub.title}\n\n"
         f"*Published {timestamp}*\n\n"
+        f"{summary}\n\n"
         f"- [Book (PDF)]({pub.book_url})\n"
         f"- [Narration (MP3)]({pub.audio_url})\n"
     )
@@ -118,5 +119,5 @@ def run(
         book_url=f"{GCP_PUBLIC_BASE}/{pdf_path}",
         audio_url=f"{GCP_PUBLIC_BASE}/{audio_path}",
     )
-    _save_publication(pub)
+    _save_publication(pub, story.summary)
     return pub
