@@ -1,6 +1,6 @@
 import os
 
-from author import Story
+from .author import Story
 from dotenv import load_dotenv
 from google import genai
 from google.genai import types

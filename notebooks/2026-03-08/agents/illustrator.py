@@ -7,14 +7,16 @@ from google.genai import types
 from dotenv import load_dotenv
 from pathlib import Path
 
-from author import Story
+from .author import Story
 from IPython.display import display
 
 load_dotenv()
 GEMINI_KEY = os.getenv("API_KEY")
 client = genai.Client(api_key=GEMINI_KEY)
 
-with open("soul.md", "r") as file:
+_DIR = Path(__file__).parent
+
+with open(_DIR / "soul.md", "r") as file:
     soul = file.read()
 
 SYSTEM_PROMPT = f"""
@@ -61,7 +63,7 @@ def generate_image(
 
 
 def generate_characters_image(story: Story) -> Image:
-    with open("characters.md", "r") as file:
+    with open(_DIR / "characters.md", "r") as file:
         characters = file.read()
     prompt = f"""
     here are the characters: {characters}

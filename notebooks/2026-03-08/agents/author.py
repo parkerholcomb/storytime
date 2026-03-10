@@ -12,7 +12,9 @@ load_dotenv()
 GEMINI_KEY = os.getenv("API_KEY")
 client = genai.Client(api_key=GEMINI_KEY)
 
-with open("soul.md", "r") as file:
+_DIR = Path(__file__).parent
+
+with open(_DIR / "soul.md", "r") as file:
     soul = file.read()
 
 SYSTEM_PROMPT = f"""
@@ -30,7 +32,7 @@ class Story(BaseModel):
 
 
 def generate_story(prompt: list, model: str = "gemini-3-flash-preview") -> Story:
-    with open("characters.md", "r") as file:
+    with open(_DIR / "characters.md", "r") as file:
         characters = file.read()
 
     prompt = f"write a story about {characters}"
