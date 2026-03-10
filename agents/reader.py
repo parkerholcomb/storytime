@@ -20,11 +20,6 @@ _DIR = Path(__file__).parent
 with open(_DIR / "soul.md", "r") as file:
     soul = file.read()
 
-SYSTEM_PROMPT = f"""
-You are the reader of a childrens story
-{soul}
-"""
-
 
 class Narration(BaseModel):
     model_config = ConfigDict(arbitrary_types_allowed=True)
@@ -41,6 +36,8 @@ def generate_audio(story: Story) -> AudioSegment:
     tts_prompt = f"""
     Read the following children's story in a warm, playful, and enthusiastic tone:
 
+    heres your soul: {soul}
+
     {full_story_text}
     """
 
@@ -51,10 +48,11 @@ def generate_audio(story: Story) -> AudioSegment:
                 contents=tts_prompt,
                 config=types.GenerateContentConfig(
                     response_modalities=["AUDIO"],
-                    system_instruction=SYSTEM_PROMPT,
                     speech_config=types.SpeechConfig(
                         voice_config=types.VoiceConfig(
-                            prebuilt_voice_config=types.PrebuiltVoiceConfig(voice_name="Aoede")
+                            prebuilt_voice_config=types.PrebuiltVoiceConfig(
+                                voice_name="Aoede"
+                            )
                         )
                     ),
                 ),
@@ -64,7 +62,9 @@ def generate_audio(story: Story) -> AudioSegment:
             if attempt == MAX_RETRIES:
                 raise
             wait = RETRY_BACKOFF * attempt
-            print(f"  ⚠ TTS server error (attempt {attempt}/{MAX_RETRIES}), retrying in {wait}s…")
+            print(
+                f"  ⚠ TTS server error (attempt {attempt}/{MAX_RETRIES}), retrying in {wait}s…"
+            )
             time.sleep(wait)
 
     pcm_data = audio_response.candidates[0].content.parts[0].inline_data.data

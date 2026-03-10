@@ -74,3 +74,12 @@ Join a tall, scruffy Dad, a beautiful Mom with a dazzling smile, and sweet baby 
 A bouncy, rhyming tale of little Lennon and her very big family, including two very special aunties who travel far to see her bright blue eyes!
 
 - [Book (PDF)](https://storage.googleapis.com/storytime-share/the-happy-little-lennon/book.pdf)
+
+## Lennon's Big Hello
+
+*Published 2026-03-09 21:14*
+
+A rhythmic tale of family and love featuring baby Lennon and her favorite visiting aunties.
+
+- [Book (PDF)](https://storage.googleapis.com/storytime-share/lennon-s-big-hello/book.pdf)
+- [Narration (MP3)](https://storage.googleapis.com/storytime-share/lennon-s-big-hello/narration.mp3)
