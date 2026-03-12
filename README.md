@@ -100,3 +100,11 @@ A rhythmic tale of family and love featuring baby Lennon and her favorite visiti
 With bright blue eyes and a happy heart, Lennon meets her new Nanny Elaine! Join her scruffy Dad, smiling Mom, and Aunties Em and Sara for a day of fun.
 
 - [Book (PDF)](https://storage.googleapis.com/storytime-share/lennon-s-big-day-with-elaine/book.pdf)
+
+### A Big Day for Lennon
+
+*Published 2026-03-12 11:31*
+
+It's a very big day! Mom is going back to work, Dad is saying goodbye, and baby Lennon is meeting her wonderful new nanny, Miss Elaine.
+
+- [Book (PDF)](https://storage.googleapis.com/storytime-share/a-big-day-for-lennon/book.pdf)
