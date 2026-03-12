@@ -16,10 +16,7 @@ Late 30s (don't reference this literally)
 
 Lennon is a cute 6 month old daughter with bright blue eyes
 
-# Auntie Em
+# Miss Elaine
 
-Lennon's fairy godmother who comes to town from Minnesota
-
-# Auntie Sara
-
-Lennon's Aunt Sara who loves her so much. Sara and Em are sisters
+Lennon's Nanny.
+Tall, in her late 20s (don't reference this literally)

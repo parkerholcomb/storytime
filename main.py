@@ -35,6 +35,7 @@ def configure_models() -> bool:
 
 def main():
     narrate = configure_models()
+    story_prompt = input("Story prompt (or Enter to skip): ").strip() or None
     t0 = time.time()
 
     total_steps = 4 if narrate else 3
@@ -42,7 +43,7 @@ def main():
 
     step += 1
     print(f"Step {step}/{total_steps} — Writing the story...")
-    story: author.Story = author.run()
+    story: author.Story = author.run(story_prompt)
     print(f'  ✓ "{story.title}" ({len(story.pages)} pages)')
 
     step += 1

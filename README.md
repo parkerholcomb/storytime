@@ -92,3 +92,11 @@ A rhythmic tale of family and love featuring baby Lennon and her favorite visiti
 
 - [Book (PDF)](https://storage.googleapis.com/storytime-share/lennon-s-big-hello/book.pdf)
 - [Narration (MP3)](https://storage.googleapis.com/storytime-share/lennon-s-big-hello/narration.mp3)
+
+### Lennon's Big Day with Elaine
+
+*Published 2026-03-12 11:24*
+
+With bright blue eyes and a happy heart, Lennon meets her new Nanny Elaine! Join her scruffy Dad, smiling Mom, and Aunties Em and Sara for a day of fun.
+
+- [Book (PDF)](https://storage.googleapis.com/storytime-share/lennon-s-big-day-with-elaine/book.pdf)

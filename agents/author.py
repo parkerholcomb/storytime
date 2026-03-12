@@ -30,11 +30,14 @@ class Story(BaseModel):
     )
 
 
-def generate_story(prompt: list) -> Story:
+def generate_story(user_prompt: str | None = None) -> Story:
     with open(_DIR / "characters.md", "r") as file:
         characters = file.read()
 
     prompt = f"write a story about {characters}"
+    if user_prompt:
+        prompt += f"\n\nAdditional direction: {user_prompt}"
+
     story_response = client.models.generate_content(
         model=MODEL,
         contents=prompt,
@@ -47,7 +50,5 @@ def generate_story(prompt: list) -> Story:
     return story_response.parsed
 
 
-def run():
-    story = generate_story(SYSTEM_PROMPT)
-
-    return story
+def run(user_prompt: str | None = None):
+    return generate_story(user_prompt)
