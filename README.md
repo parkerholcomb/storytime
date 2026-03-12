@@ -2,6 +2,10 @@
 
 AI-generated children's storybooks — written, illustrated, narrated, and published automatically.
 
+Quickstart:
+
+`python main.py`
+
 ## Publications
 
 ### The Scruff and the Snuggle of Little Miss Lennon
@@ -58,7 +62,7 @@ Join a tall scruffy Dad, a beautiful Mom with a sun-bright smile, and little Len
 
 ### The Scruffy, The Smiley, and Lennon Too
 
-*Published 2026-03-09 20:51*
+_Published 2026-03-09 20:51_
 
 Meet a tall scruffy Dad, a Mom with a beautiful smile, and sweet baby Lennon in this bouncy, rhyming tale of a very happy family.
 
@@ -66,7 +70,7 @@ Meet a tall scruffy Dad, a Mom with a beautiful smile, and sweet baby Lennon in 
 
 ### The Scruffy, the Sunny, and Blue-Eyed Bunny
 
-*Published 2026-03-09 20:55*
+_Published 2026-03-09 20:55_
 
 Join a tall, scruffy Dad, a beautiful Mom with a dazzling smile, and sweet baby Lennon with her bright blue eyes for a day of giggles and snuggles.
 
@@ -74,7 +78,7 @@ Join a tall, scruffy Dad, a beautiful Mom with a dazzling smile, and sweet baby 
 
 ### The Happy Little Lennon
 
-*Published 2026-03-09 21:06*
+_Published 2026-03-09 21:06_
 
 A bouncy, rhyming tale of little Lennon and her very big family, including two very special aunties who travel far to see her bright blue eyes!
 
@@ -82,7 +86,7 @@ A bouncy, rhyming tale of little Lennon and her very big family, including two v
 
 ### Lennon's Big Hello
 
-*Published 2026-03-09 21:14*
+_Published 2026-03-09 21:14_
 
 A rhythmic tale of family and love featuring baby Lennon and her favorite visiting aunties.
 
