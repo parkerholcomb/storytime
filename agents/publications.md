@@ -99,3 +99,30 @@ With bright blue eyes and a happy heart, Lennon meets her new Nanny Elaine! Join
 It's a very big day! Mom is going back to work, Dad is saying goodbye, and baby Lennon is meeting her wonderful new nanny, Miss Elaine.
 
 - [Book (PDF)](https://storage.googleapis.com/storytime-share/a-big-day-for-lennon/book.pdf)
+
+## The Austin Jamboree
+
+*Published 2026-03-14 22:16*
+
+When Uncle Kidder and James visit Lennon in Austin during the big music festival, there are jokes, songs, and smiles all around!
+
+- [Book (PDF)](https://storage.googleapis.com/storytime-share/the-austin-jamboree/book.pdf)
+- [Narration (MP3)](https://storage.googleapis.com/storytime-share/the-austin-jamboree/narration.mp3)
+
+## The Whizz-Bang Weekend in Austin-Town
+
+*Published 2026-03-14 22:20*
+
+When Uncle Kidder and his groovy friend James roll into town for the great musical hullabaloo, Dad, Mom, and baby Lennon find themselves in the middle of a rhyming, Phish-hat-wearing adventure!
+
+- [Book (PDF)](https://storage.googleapis.com/storytime-share/the-whizz-bang-weekend-in-austin-town/book.pdf)
+- [Narration (MP3)](https://storage.googleapis.com/storytime-share/the-whizz-bang-weekend-in-austin-town/narration.mp3)
+
+## The Glimmer-Park Go
+
+*Published 2026-03-23 12:41*
+
+Join a scruffy-faced Dad from Baylor and a Google-bright Mom as they leave their big jobs to find the best prize of all: a walk in the park with little Lennon and her bright blue eyes!
+
+- [Book (PDF)](https://storage.googleapis.com/storytime-share/the-glimmer-park-go/book.pdf)
+- [Narration (MP3)](https://storage.googleapis.com/storytime-share/the-glimmer-park-go/narration.mp3)
